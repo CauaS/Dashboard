@@ -1,9 +1,7 @@
+import Routers from './routes/Routes'
+
 function App() {
-  return (
-    <div className="App">
-      <span>Hello World</span>
-    </div>
-  )
+  return <Routers />
 }
 
 export default App
