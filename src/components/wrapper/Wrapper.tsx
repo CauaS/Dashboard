@@ -1,14 +1,17 @@
-import * as React from 'react'
+import React from 'react'
 import CssBaseline from '@mui/material/CssBaseline'
-import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
 
-export default function Wrapper() {
+interface Props {
+  children?: React.ReactNode
+}
+
+export default function Wrapper({ children }: Props) {
   return (
     <React.Fragment>
       <CssBaseline />
       <Container maxWidth="lg" data-testid="wrapper">
-        <Box sx={{ bgcolor: '#cfe8fc', height: '100vh' }} />
+        {children}
       </Container>
     </React.Fragment>
   )
