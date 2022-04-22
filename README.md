@@ -16,10 +16,11 @@ Because this one is quite new, the folder structure might change at any moment. 
 - React TS
 - Material UI
 - Eslint
+- React Testing Library
 
 
 > in the future
-- react query
+- React Query
 
 ## How it is looking at this moment
 ![image](https://user-images.githubusercontent.com/37887533/164574608-e3843e47-7ff2-4f2b-ae28-1f6dfba8cefd.png)
