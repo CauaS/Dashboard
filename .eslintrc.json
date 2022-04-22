@@ -9,7 +9,7 @@
         "plugin:@typescript-eslint/recommended",
         "plugin:prettier/recommended"
     ],
-    
+
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaFeatures": {
@@ -28,7 +28,10 @@
         "react-hooks/exhaustive-deps": "warn",
         "react/prop-types": "off",
         "react/react-in-jsx-scope": "off",
-        "@typescript-eslint/explict-module-boundary-types": "off"
+        "@typescript-eslint/explict-module-boundary-types": "off",
+        "prefer-const":"error",
+        "no-duplicate-imports":"error",
+        "arrow-spacing":"warn"
     },
     "settings": {
         "react":{
