@@ -1,9 +1,9 @@
-import { Wrapper } from '../../components'
+import { Dashboard, Wrapper } from '../../components'
 
 export default function Home() {
   return (
     <Wrapper data-testid="wrapper">
-      <h1>Home</h1>
+      <Dashboard />
     </Wrapper>
   )
 }
