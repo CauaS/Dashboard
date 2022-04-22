@@ -9,14 +9,13 @@ export default function TaskCard() {
     <Card sx={{ marginTop: 1 }}>
       <CardContent data-testid="card-content">
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          33587
         </Typography>
         <Typography variant="body2" color="text.secondary" noWrap>
-          Lizards are a widespread group of squamate reptiles, with over 6,000.
+          This a brief descripton for the item in this collumn
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Share</Button>
         <Button size="small">Learn More</Button>
       </CardActions>
     </Card>

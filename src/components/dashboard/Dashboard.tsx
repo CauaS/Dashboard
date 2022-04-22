@@ -32,41 +32,33 @@ export default function Dashboard() {
   }
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1, marginTop: 2 }}>
       <Grid container spacing={1}>
         <Grid item xs={3}>
           <Title>To do</Title>
-          <Box
-            style={{
-              ...style
-            }}
-            sx={{
-              ...sxScrollbar
-            }}
-          >
-            <TaskCard />
-            <TaskCard />
+          <Box style={style} sx={sxScrollbar}>
             <TaskCard />
           </Box>
         </Grid>
         <Grid item xs={3}>
           <Title>In progress</Title>
-          <Box
-            style={{
-              ...style
-            }}
-            sx={{
-              ...sxScrollbar
-            }}
-          >
+          <Box style={style} sx={sxScrollbar}>
             <TaskCard />
           </Box>
         </Grid>
         <Grid item xs={3}>
           <Title>Blocked</Title>
+          <Box style={style} sx={sxScrollbar}>
+            <TaskCard />
+          </Box>
         </Grid>
         <Grid item xs={3}>
           <Title>Done</Title>
+          <Box style={style} sx={sxScrollbar}>
+            <TaskCard />
+            <TaskCard />
+            <TaskCard />
+          </Box>
         </Grid>
       </Grid>
     </Box>
