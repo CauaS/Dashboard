@@ -9,7 +9,7 @@ export default function Dashboard() {
     ...theme.typography.body2,
     padding: theme.spacing(1),
     textAlign: 'center',
-    marginBottom: 10,
+    marginBottom: 4,
     color: theme.palette.text.secondary
   }))
 
