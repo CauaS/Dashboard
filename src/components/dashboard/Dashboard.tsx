@@ -37,27 +37,45 @@ export default function Dashboard() {
         <Grid item xs={3}>
           <Title>To do</Title>
           <Box style={style} sx={sxScrollbar}>
-            <TaskCard />
+            <TaskCard
+              title="32541"
+              body="This the body"
+              handleClick={() => null}
+              imageAuthor="https://images.unsplash.com/photo-1592621385612-4d7129426394?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80https://images.unsplash.com/photo-1592621385612-4d7129426394?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+            />
           </Box>
         </Grid>
         <Grid item xs={3}>
           <Title>In progress</Title>
           <Box style={style} sx={sxScrollbar}>
-            <TaskCard />
+            <TaskCard
+              title="32541"
+              body="This the body"
+              handleClick={() => null}
+              imageAuthor="https://images.unsplash.com/photo-1592621385612-4d7129426394?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80https://images.unsplash.com/photo-1592621385612-4d7129426394?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+            />
           </Box>
         </Grid>
         <Grid item xs={3}>
           <Title>Blocked</Title>
           <Box style={style} sx={sxScrollbar}>
-            <TaskCard />
+            <TaskCard
+              title="32541"
+              body="This the body"
+              handleClick={() => null}
+              imageAuthor="https://images.unsplash.com/photo-1592621385612-4d7129426394?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80https://images.unsplash.com/photo-1592621385612-4d7129426394?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+            />
           </Box>
         </Grid>
         <Grid item xs={3}>
           <Title>Done</Title>
           <Box style={style} sx={sxScrollbar}>
-            <TaskCard />
-            <TaskCard />
-            <TaskCard />
+            <TaskCard
+              title="32541"
+              body="This the body"
+              handleClick={() => null}
+              imageAuthor="https://images.unsplash.com/photo-1592621385612-4d7129426394?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80https://images.unsplash.com/photo-1592621385612-4d7129426394?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+            />
           </Box>
         </Grid>
       </Grid>
