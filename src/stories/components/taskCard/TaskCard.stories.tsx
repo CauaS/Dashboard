@@ -1,3 +1,4 @@
+import { Story } from '@storybook/react'
 import { TaskCard } from '../../../components'
 import { TaskCardProps } from '../../../components/taskCard/types'
 
@@ -11,7 +12,7 @@ export default {
   }
 }
 
-export const Template = (args: TaskCardProps) => <TaskCard {...args} />
+export const Template: Story<TaskCardProps> = args => <TaskCard {...args} />
 
 export const WithLargeDescription = Template.bind({})
 
