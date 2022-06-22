@@ -13,15 +13,16 @@
 Because this one is quite new, the folder structure might change at any moment. Of course, I just will do it, if I feel that is necessary for better understanding.
 
 ## Technologies this is project is using at moment
-- React TS
-- Material UI
-- Eslint
-- React Testing Library
+- React TS :atom:
+- Material UI 💅
+- Eslint 📏
+- React Testing Library 🧪
+- Storybook 📖
 
 
 > in the future
 - React Query
 
 ## How it is looking at this moment
-![image](https://user-images.githubusercontent.com/37887533/164574608-e3843e47-7ff2-4f2b-ae28-1f6dfba8cefd.png)
+![image](https://user-images.githubusercontent.com/37887533/164941082-bbac2fb3-7b7e-41b3-a5fd-ab8c2d3e5a1f.png)
 
