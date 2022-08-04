@@ -13,8 +13,15 @@ const Title = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(1),
   textAlign: 'center',
   marginBottom: 4,
-  color: theme.palette.text.secondary
+  color: theme.palette.text.secondary,
+  position: 'relative'
 }))
+
+const Count = ({ numberOfElments }: { numberOfElments: number }) => {
+  return (
+    <span style={{ position: 'absolute', right: 10 }}>{numberOfElments}</span>
+  )
+}
 
 const style = {
   maxHeight: '100vh',
@@ -36,9 +43,13 @@ const sxScrollbar = {
 }
 
 function Column({ title, children }: ColumnProps) {
+  const numberOfElements = React.Children.count(children)
   return (
     <Grid item xs={3} data-testid="column">
-      <Title>{title}</Title>
+      <Title>
+        {title}
+        {numberOfElements > 0 && <Count numberOfElments={numberOfElements} />}
+      </Title>
       <Box style={style} sx={sxScrollbar}>
         {children}
       </Box>

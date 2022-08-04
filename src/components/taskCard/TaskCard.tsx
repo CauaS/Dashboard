@@ -30,9 +30,6 @@ export default function TaskCard(props: TaskCardProps) {
         }
       />
       <CardContent data-testid="card-content">
-        <Typography gutterBottom variant="h6" component="div">
-          {props.title}
-        </Typography>
         <Typography variant="body2" color="text.secondary" noWrap>
           {props.body}
         </Typography>
