@@ -1,8 +1,11 @@
 import { Box, Grid } from '@mui/material'
+import { useContext } from 'react'
+import { TranslationContext } from '../../context/secondContext/translationContext'
 import TaskCard from '../taskCard/TaskCard'
 import Column from './components/Column/Column'
 
 function Dashboard() {
+  const { trans, change } = useContext(TranslationContext)
   return (
     <Box
       sx={{ flexGrow: 1, marginTop: 2, height: '100vh', overflow: 'hidden' }}
@@ -12,9 +15,9 @@ function Dashboard() {
         <Column title="To Do">
           <TaskCard
             body="body"
-            handleClick={() => null}
+            handleClick={change}
             imageAuthor=""
-            title="Title"
+            title={trans.trans}
           />
           <TaskCard
             body="body"

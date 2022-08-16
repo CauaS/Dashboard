@@ -1,5 +1,7 @@
+import { createTheme, ThemeProvider } from '@mui/material/styles'
+import { AuthProvider } from './context/firstContext/AuthProvider'
+import { TranslationProvider } from './context/secondContext/TranslationProvider'
 import Routers from './routes/Routes'
-import { ThemeProvider, createTheme } from '@mui/material/styles'
 
 const darkTheme = createTheme({
   palette: {
@@ -9,9 +11,13 @@ const darkTheme = createTheme({
 
 function App() {
   return (
-    <ThemeProvider theme={darkTheme}>
-      <Routers />
-    </ThemeProvider>
+    <AuthProvider>
+      <TranslationProvider>
+        <ThemeProvider theme={darkTheme}>
+          <Routers />
+        </ThemeProvider>
+      </TranslationProvider>
+    </AuthProvider>
   )
 }
 

@@ -9,6 +9,8 @@ import { TaskCardProps } from './types'
 import DensityMediumIcon from '@mui/icons-material/DensityMedium'
 import LowPriorityIcon from '@mui/icons-material/LowPriority'
 import PriorityHighIcon from '@mui/icons-material/PriorityHigh'
+import React from 'react'
+import { AuthContext } from '../../context/firstContext/authContext'
 
 const styleCardMedia = {
   width: 30,
@@ -17,12 +19,14 @@ const styleCardMedia = {
 }
 
 export default function TaskCard(props: TaskCardProps) {
+  const { auth } = React.useContext(AuthContext)
+
   return (
-    <Card sx={{ marginTop: 0.5 }} onClick={props.handleClick}>
+    <Card sx={{ marginTop: 0.5 }} onClick={() => props.handleClick('new Auth')}>
       <CardHeader
         title={
           <Typography variant="body1" color="text.secondary">
-            {props.title}
+            {props.title} - {auth.name}
           </Typography>
         }
         avatar={
